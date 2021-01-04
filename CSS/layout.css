@@ -1,0 +1,19 @@
+.row{
+    overflow: hidden;    
+}
+
+*[class^='col-']{
+    width: 100%;
+    float: left;
+    height: 100%;
+}
+
+
+
+@media screen and (max-width: 960px){
+    .col-xs-1{
+        
+        height: 620px;
+    }
+    
+} 

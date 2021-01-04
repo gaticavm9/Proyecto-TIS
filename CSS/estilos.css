@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    background-color: lightgray;
+}
+
+.nav{
+    top: 0;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    color: black;
+}  
+
+.nav-brand{
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 15px;
+    text-transform: capitalize;
+    font-size: 24px;
+} 
+
+.nav-links{
+    position: absolute;
+    padding: 0;
+    top: 24px;
+    right: 0;
+    list-style-type: none;
+}
+
+.nav-links li:hover{
+    opacity: 1;
+}
+
+.nav-links li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-links li{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 150ms ease-in-out;
+}
+
+.nav-links li:hover{
+    opacity: 1;
+}
+
+.menunav{
+    display:none;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 150ms ease-in-out;
+}
+
+.menunav:hover{
+    opacity: 1;
+}
+
+.menu{
+    height: 100%;
+    width: 30%;
+    background-color:white;
+    color: black;
+    position: fixed;   
+
+    /*comentar para mostrar/ocultar estatico*/
+    transform: translate3d(-100%,0,0);
+    transform: 1s;
+    
+    
+}
+
+
+
+.contenedor{
+    height: 620px;
+    width: 850px;
+    background-color: white;
+    margin-top: 90px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+.visor{
+    width: 90%;
+    height: 70%;
+    background-color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.visor2{
+    width: 75%;
+    height: 240;
+    background-color:red;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    align-items: center;
+    vertical-align: middle;
+  
+}
+
+.descripcion{
+    width: 100%;
+    height: 250px;
+    background-color:white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+}
+.estacionamiento{
+    width: 40%;
+    height: 30%;
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5px;
+}
+.barraestacionamiento{
+    width: 100%;
+    height: 20%;
+    background-color: red;
+    text-align: center;
+    border-bottom: solid;
+    border-width: 0.5px;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.barradatos{
+    width: 32%;
+    height: 79%;
+    background-color: white;
+    text-align: center;
+    border-right: solid;
+    border-width: 0.5px;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    display: inline-block;
+}
+.barradatos2{
+    width: 32.5%;
+    height: 79%;
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+
+}
+.disponibles{
+    width: 100%;
+    height: 20%;
+    background-color:white;
+    text-align: center;
+    border-bottom: solid;
+    border-width: 0.5px;
+    
+}
+.datosbase{
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.capacidad{
+    width: 32.5%;
+    height: 20%;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    display: inline-block;
+
+}
+#map{
+    height: 500px;
+}
+
+.caja{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: right;
+    align-items: flex-end;
+    display: inline-block;
+    margin-left: 70px;
+    }
+    .box{
+    width: 190px;
+    height: 240px;
+    overflow: hidden;
+    }
+
+    .box img{
+    width: 100%;
+    height: auto;
+    }
+    @supports(object-fit: cover){
+    .box img{
+    height: 100%;
+    object-fit: cover;
+    }
+    }
+
+
+/* dispositivos moviles */
+@media screen and (max-width: 960px){
+    
+    .contenedor{
+        height: 620px;
+        width: 95%;
+        margin-top: 90px;
+    }
+
+      
+    .nav-links li{
+        display: none;
+        margin-top: 10px;
+    }
+
+    
+    
+    .menunav{
+        display: inline-block;
+        right: 0;
+        position: absolute;
+        margin-top: 15px;
+        margin-right: 10px;
+        
+    }
+    
+    
+    
+}
+
+
+
+
+
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea,
+  fieldset {
+    
+    border: 1px solid #333;
+    box-sizing: border-box;
+  }
+  
+  input:invalid {
+    box-shadow: 0 0 5px 1px red;
+  }
+  
+  input:focus:invalid {
+    box-shadow: none;
+  }
